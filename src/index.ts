@@ -17,6 +17,9 @@ export type { ScenePackage, FieldRequest } from './scenepkg.js'
 export { verifyWebhook } from './webhook.js'
 export type { WebhookEvent } from './webhook.js'
 
+export { verifyAccessReceipt, findReceiptGaps } from './receipt.js'
+export type { AccessReceipt, JWK, JWKS, VerifyResult } from './receipt.js'
+
 // PKCE 工具(让 RP 自己用) / PKCE helpers (consumers may use directly)
 export { pkceChallenge } from './pkce.js'
 
