@@ -1,0 +1,29 @@
+{
+  "name": "@tden/sdk",
+  "version": "0.1.0",
+  "description": "TDEN JavaScript SDK — OIDC client, scene-package management, webhook verifier. Works in Node.js (server-side OAuth flow) and the browser (consent UI). Phase A2.6.",
+  "license": "AGPL-3.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit",
+    "test": "echo 'TODO: vitest in Phase B' && exit 0",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["tden", "oidc", "openid-connect", "identity", "decentralized", "did"],
+  "repository": "github:sunbird84/tden-sdk-js",
+  "homepage": "https://tden.network",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.6.2"
+  }
+}
